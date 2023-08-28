@@ -9,9 +9,14 @@ function App() {
   }
 
   return (
-    <div className="App">
-          {getName(str)}
-    </div>
+    <>
+        <div className="App">
+              {getName(str)}
+        </div>
+        <div className='App2'>
+              <h2>Hi there</h2>
+        </div>
+    </>
   );
 }
 
