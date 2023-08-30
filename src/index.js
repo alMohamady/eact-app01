@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import { MyApp, OtherApp } from './MyApp';
 import SyaHi from './componenets/MyCom';
+import MyComCls from './componenets/MyComCls';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -11,13 +10,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <>
-      <App />
-      <hr />
-      <MyApp />
-      <OtherApp />
-      <hr />
       <SyaHi name="Ahmed" age ="37"/>
       <SyaHi name="Mohamed" age ="40"/>
+      <hr />
+      <MyComCls name="Mohamed Salah" age="30" xyz="hhhh" />
    </>
 );
 
