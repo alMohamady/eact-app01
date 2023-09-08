@@ -1,19 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import SyaHi from './componenets/MyCom';
-import MyComCls from './componenets/MyComCls';
-import reportWebVitals from './reportWebVitals';
+import MyForm from './componenets/MyForm';
+
 
 
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <>
-      <SyaHi name="Ahmed" age ="37"/>
-      <SyaHi name="Mohamed" age ="40"/>
-      <hr />
-      <MyComCls name="Mohamed Salah" age="30" xyz="hhhh" />
+     <MyForm />
    </>
 );
 
