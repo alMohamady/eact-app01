@@ -8,49 +8,32 @@ class MyComCls extends React.Component {
         this.state = {
             name: "AlMohamady",
             age: 37, 
-            date: new Date() 
+            date: new Date(), 
+            title: "From React Class"
         };
+
+        //this.setValue = this.setValue.bind(this);
     }
 
-    /* static getDerivedStateFromProps() {
-        console.log("getDerivedStateFromProps");
-    }*/
-
-    shouldComponentUpdate(nextProps, nextState){
-        return true;
-    }
+    setValue = (event) => {
+        this.setState({
+            title: event.target.value,
+        }); 
+     }
 
     render() {
-        //console.log(this.props);
-
          const clcButton = () => {
             console.log('hellow world');
          }
 
         return (
-        <>
-          <h1>From React Class</h1>
-          <h3> {this.props.name} : {this.props.age} : {this.props.xyz}  </h3>
-          <h4> the time is  {this.state.date.toLocaleTimeString()} </h4>
-          <h4> hi {this.state.name} </h4>
-          <button onClick={clcButton}
-                  onMouseEnter={()=> { console.log("enter") }} 
-                  onMouseLeave={()=> { console.log("Leave") }}
-                  >Button Test</button>
-          <br/>
-          <input type="text" onChange={(event) => {
-            console.log(event.target.value);
-          }} />
-        </>
+            <>
+            <h1>{ this.state.title }</h1>
+            <button onClick={clcButton}>Button Test</button>
+            <br/>
+            <input type="text" onChange={this.setValue} />
+            </>
        );
-    }
-
-    componentDidMount(){
-        //00console.log("render");
-        this.setState({
-            name: "Mo Salah"
-        });
-        //console.log("componentDidMount");
     }
 }
 
