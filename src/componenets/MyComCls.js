@@ -5,7 +5,11 @@ class MyComCls extends React.Component {
     constructor(props) {
         console.log("constructor");
         super(props);
-        this.state = { date: new Date() };
+        this.state = {
+            name: "AlMohamady",
+            age: 37, 
+            date: new Date() 
+        };
     }
 
     /* static getDerivedStateFromProps() {
@@ -18,17 +22,21 @@ class MyComCls extends React.Component {
 
     render() {
         //console.log(this.props);
-        console.log("render");
         return (
         <>
           <h1>From React Class</h1>
           <h3> {this.props.name} : {this.props.age} : {this.props.xyz}  </h3>
           <h4> the time is  {this.state.date.toLocaleTimeString()} </h4>
+          <h4> hi {this.state.name} </h4>
         </>
        );
     }
 
     componentDidMount(){
+        console.log("render");
+        this.setState({
+            name: "Mo Salah"
+        });
         console.log("componentDidMount");
     }
 }
