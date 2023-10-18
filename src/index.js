@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import MyList from './componenets/ListsKeys';
+import HookEx from './componenets/UseHooks';
 
 
 
@@ -10,7 +10,7 @@ import MyList from './componenets/ListsKeys';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <>
-     <MyList />
+     <HookEx />
    </>
 );
 
