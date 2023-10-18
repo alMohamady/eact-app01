@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import MyForm from './componenets/MyForm';
+import ConRen from './componenets/ConditionalRendering';
 
 
 
@@ -9,7 +9,7 @@ import MyForm from './componenets/MyForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <>
-     <MyForm />
+     <ConRen />
    </>
 );
 
