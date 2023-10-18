@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ConRen from './componenets/ConditionalRendering';
+import MyList from './componenets/ListsKeys';
+
 
 
 
@@ -9,7 +10,7 @@ import ConRen from './componenets/ConditionalRendering';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <>
-     <ConRen />
+     <MyList />
    </>
 );
 
