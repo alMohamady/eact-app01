@@ -1,25 +1,27 @@
 
 
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 
 function HookEx() {
 
    const [count , setCount] = useState(0);
-   const [fruits, setFruits] = useState('banana');
-   const [todos, setTodos] = useState([{ text: 'Learn Hooks'} ]);
+   const [count2 , setCount2] = useState(0);
 
-   console.log('fruits: ' + fruits);
-
-
-   //const arr = ['ahmed' , 'mohamed'];
-   //const [val1, val2] = arr;
-   console.log(count, setCount);
+   useEffect(() => {
+       //document.title = ` 1: ${count} 2: ${count2}`;       
+       //setCount(count + 1);
+       console.log("do it");
+   }, [count, count2])
 
    return (
     <div>
        <p> you clicked {count} thims </p>
        <button onClick={() => setCount(count + 1)} >
          click me
+       </button>
+
+       <button onClick={() => setCount2(count2 + 1)} >
+         click me 2
        </button>
     </div>
    )
